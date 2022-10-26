@@ -1,0 +1,684 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--title-font);
+    
+}
+
+ul {
+    list-style: nome;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/*== VARIABLES ==*/
+:root {
+    --title-font: 'Open Sans', sans-serif;
+    --header-height: 4.0rem;
+    /* colors */
+    --text-color-light: hsl(0 0% 98%);
+    --background-color: rgb(45, 62, 80);
+    --title-color: rgb(36, 55, 75);
+    --color-theme: rgb(255, 200, 34);
+    --color-themedark: rgb(226, 170, 1);
+}
+
+/*== BASE ==*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+.subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    font-family: var(--title-font);
+    margin-bottom: 3rem;
+
+}
+
+.subtitle span {
+    color: var(--color-theme);
+}
+
+.subtitle h4 {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--title-color);
+    padding: 0.3rem;
+    
+}
+
+.subtitle h2 {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.subtitle p {
+    font-weight: 300;
+    font-size: 1.15rem;
+    padding: 1rem;
+    line-height: 1.8rem;
+}
+
+
+/*== LAYOUT ==*/
+.container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+
+
+/*== HEADER ==*/
+
+#contact {
+    background-color: var(--background-color);
+    color: var(--text-color-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    padding: 0.2rem 6.5rem;
+}
+
+
+#contact i {
+    transition: 0.3s;
+}
+
+.icon-mail {
+    color: var(--color-theme);
+    font-size: 1.5rem;
+    margin-right: 0.2rem;
+    top: 0.4rem;
+    position: relative;
+
+}
+
+.email {
+    position: relative;
+    top: -0.2rem;
+}
+
+.email,
+.call {
+    font: 1rem var(--body-font);
+
+}
+
+
+
+/*== LOGO ==*/
+
+.logo {
+
+    padding: 1rem 0 2rem;
+    color: var(--title-color);
+    margin-top: 1rem;
+    font: 700 1.5rem var(--title-font);
+}
+
+.logo span {
+    color: var(--color-theme);
+}
+
+/*== Navgation ==*/
+
+nav {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    font: 700 1.3rem var(--title-font);
+
+}
+
+nav .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+
+}
+
+nav ul li a {
+    transition: color 0.2s;
+    position: relative;
+    color: var(--background-color);
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--color-theme);
+}
+
+nav ul li i {
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+}
+
+nav ul li input {
+    font-size: 1rem;
+    margin-left: 0.3rem;
+    top: -0.2rem;
+    position: relative;
+    opacity: 90%;
+    padding: 0.1rem;
+}
+
+/*== HOME ==*/
+
+#home img {
+    width: 100%; /* width of container */
+    height: 62%; /* height of container */
+    object-fit: cover;
+    display: inline-block;
+    position: relative;
+    
+}
+
+.banner {
+    position: absolute;
+    text-align: center;
+    color: var(--text-color-light);
+    font: 300 1rem var(--title-font);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    top: 19rem; 
+}
+
+.subtitlehome span {
+    color: var(--color-theme);
+}
+
+.h1home {
+    font: 700 4.2rem var(--title-font);
+}
+
+.banner p {
+    padding: 2rem;
+    padding-bottom: 3rem;
+}
+
+.banner button {
+    color: var(--text-color-light);
+    background-color: var(--color-theme);
+    border: 0;
+    padding: 1.1rem 5rem;
+    border-radius: 12rem;
+    transition: color 0.2s;
+    font: 700 1rem var(--title-font);
+}
+
+.banner button:hover,
+.banner button.active { 
+   background-color: var(--color-themedark); 
+}
+
+.features {
+    top: -22rem;
+    position: relative;
+}
+
+.cardinside {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    top: -4.2rem;
+        
+}
+
+.circle {
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    border-radius: 100%;
+    object-fit: cover;
+    display: inline-block;
+    position: relative;    
+        
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  }
+
+.card {
+    padding: 4.5rem 1rem 6.5rem 1rem;
+    width: 14rem;
+    height: 12rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color-light);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+
+    }
+
+.card i {
+    color: var(--color-theme);
+    font-size: 3rem;
+}
+
+.card h5 {
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 3rem 0 1rem 0;
+}
+
+.icon-worker-helmet {
+    top: -0.2rem;
+    position: relative;
+}
+
+/*== Service ==*/
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    top: -13rem;
+    position: relative;
+    align-items: center;
+}
+
+.imgservice {
+    width: 55rem;
+    height: 37rem;
+}
+
+.ourservice {
+    margin-right: 20rem;
+}
+
+.ourservice p {
+    font-size: 1.2rem;
+    width: 30rem;
+    
+}
+
+.ourservice h2 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: var(--title-color);
+}
+
+
+.circled {
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: var(--background-color);
+    border-radius: 100%;
+    object-fit: cover;
+    position: relative;
+    top: 0.55rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+
+  }
+
+.servicedescription {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.servicedescription h5 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.servicedescription i {
+color: var(--text-color-light);
+font-size: 2.5rem;
+position: relative;
+top: 0.55rem;
+left: -3.7rem;
+}
+
+
+.footerservice img {
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+    position: relative;
+    display: inline-block;
+}
+
+.footergroup {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    padding: 3.5rem 0 0 0;
+}
+
+.footerdescription {
+    font-size: 1.3rem;
+    color: var(--text-color-light);
+}
+
+#service .subtitle {
+    margin-top: -1rem;
+}
+
+.serviceoffer {
+    margin-left: 4rem;
+    margin-right: 10rem;
+    margin-bottom: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.cardoffer {
+    display: flex;
+    align-items: baseline;
+    margin: 2rem 0;
+    
+}
+
+
+.cardoffer i {
+    color: var(--color-theme);
+    font-size: 3.5rem;
+    margin: 0 4rem;
+    position: relative;
+    top: 2.2rem;
+}
+
+.cardofferorg {
+    width: 16rem;
+}
+
+.cardofferorg h5 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.cardofferorg p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+
+}
+
+/*== Project ==*/
+
+.littlemenu {
+    justify-content: center;
+    display: flex;
+    margin: 0.5rem;
+    
+}
+
+.littlemenu ul {
+    display: flex;
+    list-style: none;
+}
+
+.littlemenu ul li {
+    padding: 0rem 1rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.littlemenu ul li a {
+    transition: color 0.2s;
+    position: relative;
+    color: var(--background-color);
+}
+
+.littlemenu ul li a:hover,
+.littlemenu ul li a.active {
+    color: var(--color-theme);
+}
+
+.imgprojects {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.imgprojects img {
+    width: 100%;
+}
+
+/*== Team ==*/
+
+.cardteam {
+    background-color: var(--background-color);
+    padding: 4rem 4rem;
+    margin: 1rem 2.5rem;
+    display: row;
+    text-align: center;
+    margin-bottom: 8rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.cardteam img {
+    width: 10rem;
+}
+
+.cardteam h2 {
+    margin-top: 2rem;
+    color: var(--text-color-light);
+}
+
+.cardteam p {
+    color: var(--color-theme);
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.social i {
+    color: var(--text-color-light);
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+/*== Testimonials ==*/
+
+.testimonials {
+    background: #f4f4f4;
+    margin-bottom: 5rem;
+    justify-content: center;
+    display: flex;
+}
+
+.testimonialsmg {
+    padding: 3rem 0;
+}
+
+.testimonial {
+    width: 65rem;
+    height: 25rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    margin-bottom: 4rem;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+.testimonial blockquote {
+    margin: 0 7rem;
+
+}
+
+.testimonial img {
+    width: 5rem;
+    border: 5rem;
+    border-radius: 10rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.08);
+
+}
+
+.testimonial .text {
+    margin: 0 1.5rem;
+}
+
+.testimonial .text p {
+    font-size: 0.85rem;
+}
+
+.testimonial cite {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.testimonial span {
+    color: var(--color-theme);
+    font: 500 2rem 'Pppins', sans-serif;
+}
+
+.testimonial .textt {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.8rem;
+
+}
+
+.stars {
+    display: flex;
+    margin-top: 1rem;
+    
+}
+
+.icon-star {
+    width: 1.5rem;
+    color: var(--color-theme);
+}
+
+/*== Contact Us ==*/
+
+.cardcontact {
+    display: flex;
+    margin: 0 10rem;
+    margin-bottom: 2rem;
+    
+}
+
+.cardcontact img {
+    width: 100%;
+}
+
+.cardscontact {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-theme);
+    margin: 0 5rem;
+ /*   padding-bottom: 5rem ; */
+}
+
+.contactdescription {
+    color: var(--text-color-light);
+    margin: 0 1rem;
+    padding:0 1.5rem;
+    align-items: center;
+}
+
+.contactdescription h3 {
+    margin: 1.1rem 0;
+}
+
+.contactdescription .pp {
+    margin: 1.5rem 0;
+    line-height: 1.8rem;
+    font-size: 1.11rem;
+    font-weight: 300;
+}
+
+.cardcontact .contactfooter {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    color: var(--background-color);
+    margin: 2rem 0;
+}
+
+.subscribebuttom {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    width: 28rem;
+    margin: auto;
+    border-radius: 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.subscribebuttom button {
+    color: var(--text-color-light);
+    background-color: var(--color-theme);
+    border: 0;
+    padding: 1.4rem 5rem;
+    border-radius: 12rem;
+    transition: color 0.2s;
+    font: 700 1rem var(--title-font);
+    position: relative;
+    left: 1.5rem;
+}
+
+.subscribebuttom button:hover,
+.subscribebuttom button.active { 
+   background-color: var(--color-themedark); 
+}
+
+.subscribebuttom input {
+    border: none;
+    background-color: #f4f4f4;
+
+}
+
+.subscribebuttom input:focus {
+    border: none;
+    outline: none;
+    background-color: #f4f4f4;
+
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+

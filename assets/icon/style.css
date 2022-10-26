@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ie7bqh');
+  src:  url('fonts/icomoon.eot?ie7bqh#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ie7bqh') format('truetype'),
+    url('fonts/icomoon.woff?ie7bqh') format('woff'),
+    url('fonts/icomoon.svg?ie7bqh#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+  content: "\e914";
+}
+.icon-twitter2:before {
+  content: "\e90d";
+}
+.icon-bulldozer:before {
+  content: "\e915";
+}
+.icon-gear:before {
+  content: "\e909";
+}
+.icon-brush:before {
+  content: "\e90a";
+}
+.icon-plan:before {
+  content: "\e90b";
+}
+.icon-worker:before {
+  content: "\e90c";
+}
+.icon-worker-helmet:before {
+  content: "\e90e";
+}
+.icon-drilling-machine:before {
+  content: "\e90f";
+}
+.icon-paintbrush:before {
+  content: "\e910";
+}
+.icon-tools-2:before {
+  content: "\e911";
+}
+.icon-tools:before {
+  content: "\e912";
+}
+.icon-mail:before {
+  content: "\e907";
+}
+.icon-paint-format:before {
+  content: "\e913";
+}
+.icon-search:before {
+  content: "\e908";
+}
+.icon-linkedin:before {
+  content: "\e900";
+}
+.icon-linkedin1:before {
+  content: "\e901";
+}
+.icon-twitter:before {
+  content: "\e902";
+}
+.icon-facebook:before {
+  content: "\e903";
+}
+.icon-facebook2:before {
+  content: "\e904";
+}
+.icon-google2:before {
+  content: "\e905";
+}
+.icon-google:before {
+  content: "\e906";
+}
